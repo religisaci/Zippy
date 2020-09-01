@@ -1,5 +1,5 @@
 {
-    "name": "religisaci/zippy",
+    "name": "alchemy/zippy",
     "type": "library",
     "description": "Zippy, the archive manager companion",
     "keywords": ["zip", "tar", "bzip", "compression"],
