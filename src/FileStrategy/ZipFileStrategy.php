@@ -19,7 +19,10 @@ class ZipFileStrategy extends AbstractFileStrategy
     protected function getServiceNames()
     {
         return array(
+           /**
+           * is incompatible with symfony/process 4.0
             'Alchemy\\Zippy\\Adapter\\ZipAdapter',
+           */
             'Alchemy\\Zippy\\Adapter\\ZipExtensionAdapter'
         );
     }
