@@ -163,7 +163,7 @@ class TeleporterContainer implements \ArrayAccess, \Countable
      * </p>
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         throw new \BadMethodCallException();
     }
