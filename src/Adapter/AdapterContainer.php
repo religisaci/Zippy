@@ -162,7 +162,7 @@ class AdapterContainer implements \ArrayAccess
      * @return bool true on success or false on failure.
      * <p>The return value will be casted to boolean if non-boolean was returned.</p>
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->items[$offset]);
     }
