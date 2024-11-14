@@ -81,7 +81,7 @@ class Archive implements ArchiveInterface
      *
      * @return \ArrayIterator|MemberInterface[] An iterator
      */
-    public function getIterator(): Traversable
+    public function getIterator(): \Traversable
     {
         return new \ArrayIterator($this->getMembers());
     }
