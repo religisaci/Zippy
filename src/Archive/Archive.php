@@ -69,7 +69,7 @@ class Archive implements ArchiveInterface
     /**
      * @inheritdoc
      */
-    public function count()
+    public function count(): int
     {
         return count($this->getMembers());
     }
