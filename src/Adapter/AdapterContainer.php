@@ -201,7 +201,7 @@ class AdapterContainer implements \ArrayAccess
      * </p>
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         $this->items[$offset] = $value;
     }
@@ -215,7 +215,7 @@ class AdapterContainer implements \ArrayAccess
      * </p>
      * @return void
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->items[$offset]);
     }
