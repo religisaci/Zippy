@@ -182,7 +182,7 @@ class TeleporterContainer implements \ArrayAccess, \Countable
         throw new \BadMethodCallException();
     }
 
-    public function count()
+    public function count(): int
     {
         return count($this->teleporters);
     }
