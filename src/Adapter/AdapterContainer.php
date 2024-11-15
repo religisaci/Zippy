@@ -176,7 +176,7 @@ class AdapterContainer implements \ArrayAccess
      * </p>
      * @return mixed Can return all value types.
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         if (array_key_exists($offset, $this->items) && is_callable($this->items[$offset])) {
             $this->items[$offset] = call_user_func($this->items[$offset], $this);
